@@ -1,1 +1,1 @@
-export { MemoryStorage } from './memory-storage';
+export { SimpleMemoryStorage } from './simple-memory-storage';

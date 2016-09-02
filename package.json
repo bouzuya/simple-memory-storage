@@ -1,5 +1,5 @@
 {
-  "name": "memory-storage",
+  "name": "simple-memory-storage",
   "description": "A Web storage using JavaScript object",
   "version": "0.0.0",
   "author": {
@@ -19,7 +19,7 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/bouzuya/memory-storage/issues"
+    "url": "https://github.com/bouzuya/simple-memory-storage/issues"
   },
   "devDependencies": {
     "@types/node": "6.0.38",
@@ -36,13 +36,13 @@
     "typescript": "2.0.0",
     "watch": "0.19.2"
   },
-  "homepage": "https://github.com/bouzuya/memory-storage#readme",
+  "homepage": "https://github.com/bouzuya/simple-memory-storage#readme",
   "keywords": [],
   "license": "MIT",
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bouzuya/memory-storage"
+    "url": "https://github.com/bouzuya/simple-memory-storage"
   },
   "scripts": {
     "build": "npm-run-all -s 'build:ts' 'build:es2015' -p 'copy:*'",

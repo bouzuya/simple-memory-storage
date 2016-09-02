@@ -1,13 +1,19 @@
-# memory-storage
+# simple-memory-storage
 
 A Web storage using JavaScript object.
+
+## Installation
+
+```
+$ npm install simple-memory-storage
+```
 
 ## Badges
 
 [![Travis CI][travis-ci-badge]][travis-ci]
 
-[travis-ci-badge]: https://img.shields.io/travis/bouzuya/memory-storage.svg
-[travis-ci]: https://travis-ci.org/bouzuya/memory-storage
+[travis-ci-badge]: https://img.shields.io/travis/bouzuya/simple-memory-storage.svg
+[travis-ci]: https://travis-ci.org/bouzuya/simple-memory-storage
 
 ## License
 

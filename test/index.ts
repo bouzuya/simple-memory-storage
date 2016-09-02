@@ -1,20 +1,20 @@
 import * as assert from 'power-assert';
 import beater from 'beater';
-import { MemoryStorage } from '../src/';
+import { SimpleMemoryStorage } from '../src/';
 
 const { test } = beater();
 
 const category = 'MemoryStorage > ';
 
 test(category + 'initial state', () => {
-  const storage = new MemoryStorage();
+  const storage = new SimpleMemoryStorage();
   assert(storage.length === 0);
   assert(storage.key(0) === null);
   assert(storage.getItem('') === null);
 });
 
 test(category + 'add an item', () => {
-  const storage = new MemoryStorage();
+  const storage = new SimpleMemoryStorage();
   storage.setItem('key1', 'value1');
   assert(storage.length === 1);
   assert(storage.key(0) === 'key1');
@@ -22,7 +22,7 @@ test(category + 'add an item', () => {
 });
 
 test(category + 'add 2 items', () => {
-  const storage = new MemoryStorage();
+  const storage = new SimpleMemoryStorage();
   storage.setItem('key1', 'value1');
   storage.setItem('key2', 'value2');
   assert(storage.length === 2);
@@ -33,7 +33,7 @@ test(category + 'add 2 items', () => {
 });
 
 test(category + 'add 2 items and clear', () => {
-  const storage = new MemoryStorage();
+  const storage = new SimpleMemoryStorage();
   storage.setItem('key1', 'value1');
   storage.setItem('key2', 'value2');
   storage.clear();
@@ -45,7 +45,7 @@ test(category + 'add 2 items and clear', () => {
 });
 
 test(category + 'add 2 items and remove an item', () => {
-  const storage = new MemoryStorage();
+  const storage = new SimpleMemoryStorage();
   storage.setItem('key1', 'value1');
   storage.setItem('key2', 'value2');
   storage.removeItem('key1');
@@ -56,7 +56,7 @@ test(category + 'add 2 items and remove an item', () => {
 });
 
 test(category + 'update an item', () => {
-  const storage = new MemoryStorage();
+  const storage = new SimpleMemoryStorage();
   storage.setItem('key1', 'value1');
   storage.setItem('key1', 'new value');
   assert(storage.length === 1);

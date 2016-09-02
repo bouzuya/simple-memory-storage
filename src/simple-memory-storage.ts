@@ -1,6 +1,6 @@
 import { Storage } from './storage';
 
-export class MemoryStorage implements Storage {
+export class SimpleMemoryStorage implements Storage {
   private _keys: string[];
   private _memory: { [key: string]: string; };
 
