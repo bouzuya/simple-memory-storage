@@ -8,6 +8,35 @@ A Web storage using JavaScript object.
 $ npm install simple-memory-storage
 ```
 
+## Usage
+
+```ts
+import { SimpleMemoryStorage } from 'simple-memory-storage';
+
+const storage = new SimpleMemoryStorage();
+storage.setItem('key1', 'value1');
+console.log(storage.length); // 1
+console.log(storage.key(0)); // 'key1'
+console.log(storage.getItem('key1')); // 'value1'
+
+storage.setItem('key2', 'value2');
+console.log(storage.length); // 2
+console.log(storage.key(1)); // 'key2'
+console.log(storage.getItem('key2')); // 'value2'
+
+storage.setItem('key1', 'value1 updated');
+console.log(storage.getItem('key1')); // 'value1 updated'
+
+storage.removeItem('key2');
+console.log(storage.length); // 1
+console.log(storage.getItem('key2')); // null
+
+storage.clear();
+console.log(storage.length); // 0
+```
+
+See: [test/](test)
+
 ## Badges
 
 [![NPM][npm-badge]][npm]
