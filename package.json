@@ -1,7 +1,7 @@
 {
   "name": "simple-memory-storage",
   "description": "A Web storage using JavaScript object",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": {
     "name": "bouzuya",
     "email": "m@bouzuya.net",
