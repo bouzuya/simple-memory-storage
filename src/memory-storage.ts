@@ -14,6 +14,7 @@ export class MemoryStorage implements Storage {
   }
 
   clear(): void {
+    // NOTE: no event support
     this._memory = {};
     this._keys = [];
   }
@@ -28,6 +29,7 @@ export class MemoryStorage implements Storage {
   }
 
   removeItem(key: string): void {
+    // NOTE: no event support
     delete this._memory[key];
     const index = this._keys.indexOf(key);
     if (index < 0) return;
@@ -35,6 +37,7 @@ export class MemoryStorage implements Storage {
   }
 
   setItem(key: string, value: string): void {
+    // NOTE: no event support
     this._memory[key] = value;
     if (this._keys.indexOf(key) < 0) {
       this._keys.push(key);
