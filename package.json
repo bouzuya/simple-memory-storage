@@ -36,6 +36,9 @@
     "typescript": "2.0.0",
     "watch": "0.19.2"
   },
+  "files": [
+    "lib"
+  ],
   "homepage": "https://github.com/bouzuya/simple-memory-storage#readme",
   "keywords": [],
   "license": "MIT",
