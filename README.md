@@ -52,6 +52,12 @@ See: [test/](test)
 
 [MIT](LICENSE)
 
+## Related Project
+
+- [bouzuya/cookie-storage][]
+
+[bouzuya/cookie-storage]: https://github.com/bouzuya/cookie-storage
+
 ## Author
 
 [bouzuya][user] &lt;[m@bouzuya.net][email]&gt; ([http://bouzuya.net][url])
