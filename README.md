@@ -1,6 +1,6 @@
-# simple-memory-storage
+![simple-memory-storage logo](https://cloud.githubusercontent.com/assets/1221346/18345916/a4c7d634-75f8-11e6-8dd1-517607b3d522.png)
 
-A Web storage using JavaScript object.
+simple-memory-storage: A Web storage using JavaScript object.
 
 ## Installation
 
